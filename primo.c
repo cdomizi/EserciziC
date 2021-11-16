@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[]) {
   int anni;
-  printf("Forse...(numero parametri: %d) %s\n", argc, argv[0]);
+  printf("Forse...(numero parametri: %d) %s\n", argv[0]);
   if (argc>1) printf("Primo argomento utente: %s\n", argc[1]);
   if (argc>2) {
     anni = atoi(argv[2]);
@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
       printf("Secondo argomento utente (%s) valido %d\n", argv[2], anni);
     else {
       printf("Secondo argomento utente (%s) non valido\n", argv[2]);
-      return -1
+      return -1;
     }
   }
   return 0;
